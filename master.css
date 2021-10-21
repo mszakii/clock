@@ -25,6 +25,7 @@ body {
   box-shadow: 
   inset -3px -3px 7px #FFFFFF70,
   inset 3px 3px 5px rgb(94, 104, 121, .288);
+  overflow: hidden;
 }
 
 .clock:after {
@@ -37,6 +38,7 @@ body {
   height: 10px;
   background: var(--text);
   border-radius: 50%;
+  z-index: 3;
 }
 
 .arr {
@@ -50,6 +52,7 @@ body {
   left: 50%;
   transform: translateX(-50%) rotate(calc(var(--rotate) * 1deg));
   transform-origin: bottom;
+  z-index: 2;
 }
 
 
@@ -158,4 +161,21 @@ body {
 }
 .num11 > div {
   transform: rotate(-330deg);
+}
+
+.digital {
+  width: 20%;
+  height: 15%;
+  box-shadow: 
+  inset -3px -3px 7px #FFFFFF70,
+  inset 3px 3px 5px rgb(94, 104, 121, .288);
+  background: var(--main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 25%;
+  left: 25%;
+  border-radius: 10px;
+  z-index: 1;
 }
