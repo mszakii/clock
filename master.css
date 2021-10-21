@@ -1,0 +1,161 @@
+:root {
+  --main: #dde1e7;
+  --text: #1F1F1F;
+  --arr-hours: #4285f4;
+  --arr-min: #0f9d58;
+  --arr-sec: #da4437;
+}
+
+body {
+  background: var(--main);
+  font-family: 'Gemunu Libre',Arial,Sans-Serif;
+  font-weight: bold;
+  color: var(--text);
+}
+
+.clock {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: var(--main);
+  box-shadow: 
+  inset -3px -3px 7px #FFFFFF70,
+  inset 3px 3px 5px rgb(94, 104, 121, .288);
+}
+
+.clock:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 10px;
+  height: 10px;
+  background: var(--text);
+  border-radius: 50%;
+}
+
+.arr {
+  --rotate: 30;
+  width: 3px;
+  height: 20%;
+  background: var(--arr-hours);
+  border-radius: 5px;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%) rotate(calc(var(--rotate) * 1deg));
+  transform-origin: bottom;
+}
+
+
+.arr.min {
+  --rotate: 0;
+  height: 30%;
+  background: var(--arr-min);
+}
+
+.arr.sec {
+  --rotate: 60;
+  height: 40%;
+  background: var(--arr-sec);
+}
+
+.nums {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 90%;
+  height: 90%;
+}
+
+.num {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.num01 {
+  transform: rotate(30deg);
+}
+.num01 > div {
+  transform: rotate(-30deg);
+}
+
+.num02 {
+  transform: rotate(60deg);
+}
+.num02 > div {
+  transform: rotate(-60deg);
+}
+
+.num03 {
+  transform: rotate(90deg);
+}
+.num03 > div {
+  transform: rotate(-90deg);
+}
+
+.num04 {
+  transform: rotate(120deg);
+}
+.num04 > div {
+  transform: rotate(-120deg);
+}
+
+.num05 {
+  transform: rotate(150deg);
+}
+.num05 > div {
+  transform: rotate(-150deg);
+}
+
+.num06 {
+  transform: rotate(180deg);
+}
+.num06 > div {
+  transform: rotate(-180deg);
+}
+
+.num07 {
+  transform: rotate(210deg);
+}
+.num07 > div {
+  transform: rotate(-210deg);
+}
+
+.num08 {
+  transform: rotate(240deg);
+}
+.num08 > div {
+  transform: rotate(-240deg);
+}
+
+.num09 {
+  transform: rotate(270deg);
+}
+.num09 > div {
+  transform: rotate(-270deg);
+}
+
+.num10 {
+  transform: rotate(300deg);
+}
+.num10 > div {
+  transform: rotate(-300deg);
+}
+
+.num11 {
+  transform: rotate(330deg);
+}
+.num11 > div {
+  transform: rotate(-330deg);
+}
