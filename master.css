@@ -54,6 +54,7 @@ body {
   transform: translateX(-50%) rotate(calc(var(--rotate) * 1deg));
   transform-origin: bottom;
   z-index: 2;
+  transition: .2s;
 }
 
 
@@ -64,7 +65,7 @@ body {
 }
 
 .arr.sec {
-  --rotate: 60;
+  --rotate: 0;
   height: 40%;
   background: var(--arr-sec);
 }
