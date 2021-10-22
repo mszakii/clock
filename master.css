@@ -11,6 +11,7 @@ body {
   font-family: 'Gemunu Libre',Arial,Sans-Serif;
   font-weight: bold;
   color: var(--text);
+  user-select: none;
 }
 
 .clock {
